@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: multibot-maker
+    runtime: docker
+    plan: free
+    healthCheckPath: /
+    envVars:
+      - key: MAKER_BOT_TOKEN
+        sync: false
+      - key: OWNER_ID
+        sync: false
